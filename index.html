@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--Doctype informa ao agente de usuário a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Estacionamento</title>
-    <link rel="stylesheet" href="style.css">  
+    <!--Informa qual tipo de codificação está utilizando-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Pedro">
+    <!--Informa no mecanismo de busco o autor-->
+    <meta name="description" content="html,css,jv">
+    <!--Descreve assim que for pesquisado-->
+    <meta name="keywords" content="agenda">
+    <!--Palavras chaves a serem encontradas-->
+    <title>Estacionameto</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        <input type="text" id="name" placeholder="Nome do veículo" autocomplete="off">
-        <input type="text" id="licence" placeholder="Placa do veículo" autocomplete="off">
-        <button id="send" class="success">Registrar</button>
+
+    <div class="comeco">
+
+        <h1>Estacionamento Sant'Ana Furious Cars</h1>
+
+        <input type="text" id="name" placeholder="Veículo" autocomplete="off">
+
+        <input type="text" id="licence" placeholder="Placa" autocomplete="off">
+
+        <input type="text" id="corcarro" placeholder="Cor" autocomplete="off">
+
+        <input type="text" id="quantasportas" placeholder="Quantidade de portas" autocomplete="off">
+
+        <input type="text" id="propriet" placeholder="Nome Do Proprietário" autocomplete="off">
+
+        <button id="send" class="feito">Registrar</button>
+        <p>Observação: </p>
+        <p>Moto até 30 minutos fica grátis, após 1 hora R$2,00. Mais de 4 horas R$10,00</p>
+        <p>Carro até 15 minutos fica grátis, após 1 hora R$4,00. Mais de 4 horas R$20,00</p>
     </div>
-    <table>
+
+    <table class="tabela">
+
         <thead>
+
             <tr>
                 <th>Veículo</th>
+
                 <th>Placa</th>
+
                 <th>Entrada</th>
-                <th>Ações</th>
+
+                <th>Cor</th>
+
+                <th>Portas</th>
+
+                <th>Proprietário</th>
+
+                <th>Cancelar</th>
+
             </tr>
+
         </thead>
+
         <tbody id="garage"></tbody>
+
     </table>
+
 </body>
 
 <script src="script.js"></script>
+
 </html>
